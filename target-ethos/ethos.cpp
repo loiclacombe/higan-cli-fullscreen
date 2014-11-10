@@ -106,7 +106,7 @@ Program::Program(int argc, char** argv) {
   utility->synchronizeRuby();
   utility->updateShader();
 
-  if(config->video.startFullScreen && argc >= 2) utility->toggleFullScreen();
+  if(argc >= 2) utility->toggleFullScreen();
   Application::processEvents();
 
   if(argc >= 2) utility->loadMedia(argv[1]);
